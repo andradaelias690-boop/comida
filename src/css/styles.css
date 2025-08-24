@@ -928,3 +928,54 @@ section {
     flex-direction: column;
     padding: var(--spacing-md);
 }
+
+/* Responsive adjustments for mobile dropdowns */
+@media (max-width: 992px) {
+    .dropdown {
+        width: 100%;
+    }
+
+    .dropdown .dropbtn {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    .dropdown .dropbtn i {
+        transition: transform 0.3s ease;
+    }
+
+    .dropdown.active .dropbtn i {
+        transform: rotate(180deg);
+    }
+
+    .dropdown-content,
+    .dropdown-content-simple {
+        display: none;
+        position: static;
+        background-color: #f0f0f0; /* Un fondo ligeramente diferente para anidar */
+        box-shadow: none;
+        width: 100%;
+        border-radius: 0;
+        border-top: 1px solid #ddd;
+        padding-left: var(--spacing-lg); /* Indent sub-menu */
+    }
+
+    .dropdown.active > .dropdown-content,
+    .dropdown.active > .dropdown-content-simple {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .dropdown-column {
+        width: 100%;
+        padding: var(--spacing-sm) 0;
+        border-left: none;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .dropdown-column:last-child {
+        border-bottom: none;
+    }
+}
