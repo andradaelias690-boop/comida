@@ -345,50 +345,40 @@ section {
     box-shadow: var(--shadow-md);
 }
 
-.team-member-img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: var(--spacing-md);
-    border: 4px solid var(--secondary-color);
+.team-member img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center top;
+  margin-bottom: var(--spacing-lg);
+  border: 5px solid var(--light-gray);
+  transition: border-color 0.3s ease;
 }
 
-.team-member-name {
-    color: var(--primary-color);
-    font-family: var(--font-secondary);
-    font-size: 1.5rem;
-    margin-bottom: var(--spacing-xs);
+.team-member:hover img {
+    border-color: var(--secondary-color);
 }
 
-.team-member-title {
-    color: var(--text-light);
-    font-weight: 500;
-    margin-bottom: var(--spacing-sm);
+.team-member h3 {
+  color: var(--primary-color);
+  font-family: var(--font-secondary);
+  font-size: 1.5rem;
+  margin-bottom: var(--spacing-xs);
 }
-
-.team-member-bio {
-    font-size: 0.95rem;
-    color: var(--text-light);
-    margin-bottom: var(--spacing-md);
-}
-
-.team-member-social {
-    display: flex;
-    justify-content: center;
-    gap: var(--spacing-sm);
-}
-
-.team-member-social a {
-    color: var(--primary-color);
-    font-size: 1.2rem;
+.team-member h3 a {
+    text-decoration: none;
+    color: inherit;
     transition: color 0.3s ease;
 }
-
-.team-member-social a:hover {
+.team-member h3 a:hover {
     color: var(--secondary-color);
 }
 
+.team-member p {
+  color: var(--text-light);
+  font-size: 0.9rem;
+}
 
 /* About Section */
 .about-content {
