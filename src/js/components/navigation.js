@@ -5,7 +5,6 @@ class Navigation {
     this.navToggle = document.querySelector(".nav-toggle")
     this.navMenu = document.querySelector(".nav-menu")
     this.navLinks = document.querySelectorAll(".nav-menu a")
-    this.dropdowns = document.querySelectorAll(".nav-menu .dropdown")
 
     this.init()
   }
@@ -41,25 +40,6 @@ class Navigation {
         this.closeMobileMenu()
       }
     })
-
-    // Handle mobile dropdowns
-    this.dropdowns.forEach((dropdown) => {
-      const toggle = dropdown.querySelector("a") // The link that toggles the dropdown
-      toggle.addEventListener("click", (e) => {
-        if (window.innerWidth <= 992 && dropdown.contains(e.target)) {
-          // On mobile, prevent navigation on first tap and open the dropdown
-          e.preventDefault()
-          // Close other open dropdowns
-          this.dropdowns.forEach((otherDropdown) => {
-            if (otherDropdown !== dropdown) {
-              otherDropdown.classList.remove("active")
-            }
-          })
-          // Toggle the current dropdown
-          dropdown.classList.toggle("active")
-        }
-      })
-    })
   }
 
   toggleMobileMenu() {
@@ -82,11 +62,6 @@ class Navigation {
   closeMobileMenu() {
     this.navMenu.classList.remove("active")
     this.navToggle.classList.remove("active")
-
-    // Close any open dropdowns when closing the mobile menu
-    this.dropdowns.forEach((dropdown) => {
-      dropdown.classList.remove("active")
-    })
 
     // Reset hamburger menu
     const spans = this.navToggle.querySelectorAll("span")
