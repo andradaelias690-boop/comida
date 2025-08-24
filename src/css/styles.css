@@ -974,7 +974,7 @@ section {
 
     .dropdown.mobile-active > .dropdown-content,
     .dropdown.mobile-active > .dropdown-content-simple {
-        display: flex; /* Show when active */
+        display: flex !important; /* Show when active, use !important to ensure override */
     }
 
     .dropdown-column {
