@@ -166,3 +166,115 @@ a:focus {
     page-break-inside: avoid;
   }
 }
+
+/* Profile Page Styles */
+.profile-page {
+    padding: var(--spacing-xxl) 0;
+    background-color: var(--white);
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xl);
+    margin-bottom: var(--spacing-xxl);
+    padding-bottom: var(--spacing-xl);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.profile-img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid var(--secondary-color);
+}
+
+.profile-name {
+    font-family: var(--font-secondary);
+    font-size: 2.8rem;
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-xs);
+}
+
+.profile-title {
+    font-size: 1.2rem;
+    color: var(--text-light);
+    font-weight: 500;
+    margin-bottom: var(--spacing-md);
+}
+
+.profile-contact-info {
+    display: flex;
+    gap: var(--spacing-lg);
+}
+
+.profile-contact-info a {
+    color: var(--text-dark);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.profile-contact-info a:hover {
+    color: var(--secondary-color);
+}
+
+.profile-contact-info i {
+    margin-right: var(--spacing-xs);
+}
+
+.profile-content {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: var(--spacing-xxl);
+}
+
+.profile-main h2 {
+    font-family: var(--font-secondary);
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--secondary-color);
+    padding-bottom: var(--spacing-xs);
+    margin-bottom: var(--spacing-md);
+}
+
+.profile-main ul {
+    list-style-position: inside;
+    padding-left: var(--spacing-sm);
+    margin-bottom: var(--spacing-md);
+}
+
+.profile-sidebar {
+    background-color: var(--light-gray);
+    padding: var(--spacing-lg);
+    border-radius: var(--radius-lg);
+}
+
+.profile-sidebar h3 {
+    font-family: var(--font-secondary);
+    color: var(--primary-color);
+    font-size: 1.4rem;
+    margin-bottom: var(--spacing-md);
+}
+
+.profile-sidebar ul {
+    list-style: none;
+    margin-bottom: var(--spacing-lg);
+}
+
+.profile-sidebar ul li {
+    margin-bottom: var(--spacing-xs);
+    color: var(--text-light);
+}
+
+@media (max-width: 992px) {
+    .profile-content {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .profile-header {
+        flex-direction: column;
+        text-align: center;
+    }
+}
