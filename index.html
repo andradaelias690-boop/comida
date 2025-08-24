@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudio Jurídico Profesional - Abogados Especializados</title>
+    <meta name="description" content="Estudio jurídico con más de 20 años de experiencia en derecho civil, penal, laboral y corporativo. Consulta gratuita.">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="src/css/styles.css">
+    <link rel="stylesheet" href="src/css/components.css">
+    <link rel="stylesheet" href="src/css/chatbot.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <i class="fas fa-balance-scale"></i>
+                <span>Estudio Jurídico</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#equipo">Equipo</a></li>
+                <li><a href="#testimonios">Testimonios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+            <button class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Justicia y Experiencia a Su Servicio</h1>
+            <p class="hero-subtitle">Más de 20 años defendiendo sus derechos con excelencia y compromiso profesional</p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary" id="openChatbotBtn">Consulta Gratuita</button>
+                <a href="#servicios" class="btn btn-secondary">Nuestros Servicios</a>
+            </div>
+        </div>
+        <div class="hero-image-carousel">
+            <div class="carousel-inner">
+                <img src="https://svyasociados.com.ar/wp-content/uploads/2023/07/Los-mejores-30-Estudios-Juridicos-y-Contables-de-Buenos-Aires-en-2024-Salisky-Vaena-Asociados-Estudio-Juridico-Contable-scaled.jpg" alt="Oficina legal profesional" class="carousel-item active">
+                <img src="https://abogadosbahiablanca.com/wp-content/uploads/2018/03/abogados223.jpg" alt="Imagen de justicia" class="carousel-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNpFxhpLm8MDv85INGwecJNZH_jg4AyF1Isg&s" alt="Equipo de abogados" class="carousel-item">
+            </div>
+            <button class="carousel-control prev" aria-label="Anterior">&lt;</button>
+            <button class="carousel-control next" aria-label="Siguiente">&gt;</button>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicios" class="services">
+        <div class="container">
+            <h2 class="section-title">Nuestras Especialidades</h2>
+            <p class="section-subtitle">Ofrecemos servicios legales integrales con la más alta calidad profesional</p>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-gavel"></i>
+                    </div>
+                    <h3>Derecho Civil</h3>
+                    <p>Contratos, responsabilidad civil, derecho de familia y sucesiones</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Derecho Penal</h3>
+                    <p>Defensa penal, delitos económicos y procedimientos judiciales</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3>Derecho Laboral</h3>
+                    <p>Relaciones laborales, despidos y negociación colectiva</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3>Derecho Corporativo</h3>
+                    <p>Constitución de empresas, fusiones y adquisiciones</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>Derecho Inmobiliario</h3>
+                    <p>Compraventa, arrendamientos y propiedad horizontal</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-calculator"></i>
+                    </div>
+                    <h3>Derecho Tributario</h3>
+                    <p>Asesoría fiscal, planificación tributaria y controversias</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="equipo" class="team">
+        <div class="container">
+            <h2 class="section-title">Nuestro Equipo</h2>
+            <p class="section-subtitle">Conozca a los profesionales que lideran nuestro estudio.</p>
+            <div class="team-grid">
+                <!-- Miembro del equipo 1 -->
+                <div class="team-member">
+                    <img src="public/professional-man-headshot.png" alt="Abogado 1" class="team-member-img">
+                    <h3 class="team-member-name">Dr. Juan Pérez</h3>
+                    <p class="team-member-title">Socio Fundador - Especialista en Derecho Penal</p>
+                    <p class="team-member-bio">Con más de 25 años de experiencia, el Dr. Pérez es un referente en litigios complejos y defensa penal, reconocido por su enfoque estratégico y dedicación a cada caso.</p>
+                    <div class="team-member-social">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+                <!-- Miembro del equipo 2 -->
+                <div class="team-member">
+                    <img src="public/professional-woman-headshot.png" alt="Abogada 2" class="team-member-img">
+                    <h3 class="team-member-name">Dra. Ana Gómez</h3>
+                    <p class="team-member-title">Socia - Especialista en Derecho Civil y Familiar</p>
+                    <p class="team-member-bio">La Dra. Gómez lidera el área de derecho civil, con una destacada trayectoria en casos de familia, sucesiones y contratos. Su empatía y rigor técnico son su sello distintivo.</p>
+                    <div class="team-member-social">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+                <!-- Miembro del equipo 3 -->
+                <div class="team-member">
+                    <img src="public/placeholder-user.jpg" alt="Abogado 3" class="team-member-img">
+                    <h3 class="team-member-name">Dr. Carlos Sánchez</h3>
+                    <p class="team-member-title">Abogado Asociado - Derecho Laboral</p>
+                    <p class="team-member-bio">El Dr. Sánchez se especializa en asesorar a empresas y trabajadores en todas las áreas del derecho laboral, buscando siempre soluciones justas y eficientes.</p>
+                    <div class="team-member-social">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="nosotros" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Más de Dos Décadas de Excelencia Legal</h2>
+                    <p>Nuestro estudio jurídico se ha consolidado como referente en el sector legal, brindando servicios de la más alta calidad con un enfoque personalizado y resultados excepcionales.</p>
+                    
+                    <div class="about-values">
+                        <div class="value-item">
+                            <i class="fas fa-award"></i>
+                            <div>
+                                <h4>Excelencia</h4>
+                                <p>Compromiso con la calidad en cada caso</p>
+                            </div>
+                        </div>
+                        <div class="value-item">
+                            <i class="fas fa-handshake"></i>
+                            <div>
+                                <h4>Confianza</h4>
+                                <p>Relaciones duraderas con nuestros clientes</p>
+                            </div>
+                        </div>
+                        <div class="value-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h4>Eficiencia</h4>
+                                <p>Soluciones rápidas y efectivas</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">500+</span>
+                        <span class="stat-label">Casos Exitosos</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">20+</span>
+                        <span class="stat-label">Años de Experiencia</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">95%</span>
+                        <span class="stat-label">Casos Ganados</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">24/7</span>
+                        <span class="stat-label">Atención al Cliente</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonios" class="testimonials">
+        <div class="container">
+            <h2 class="section-title">Lo Que Dicen Nuestros Clientes</h2>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"Excelente atención y profesionalismo. Resolvieron mi caso de manera eficiente y siempre me mantuvieron informado del proceso."</p>
+                    <div class="testimonial-author">
+                        <strong>María González</strong>
+                        <span>Empresaria</span>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"Profesionales de primer nivel. Su experiencia en derecho corporativo fue clave para el éxito de nuestra fusión empresarial."</p>
+                    <div class="testimonial-author">
+                        <strong>Carlos Rodríguez</strong>
+                        <span>Director General</span>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"Recomiendo ampliamente sus servicios. Son abogados comprometidos que realmente se preocupan por sus clientes."</p>
+                    <div class="testimonial-author">
+                        <strong>Ana Martínez</strong>
+                        <span>Consultora</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contáctanos</h2>
+            <p class="section-subtitle">Estamos aquí para ayudarte. Consulta gratuita disponible.</p>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Dirección</h4>
+                            <p>Av. Libertador 1234, Piso 10<br>Ciudad Autónoma de Buenos Aires</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Teléfono</h4>
+                            <p>+54 11 4567-8900</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>info@estudiojuridico.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Horarios</h4>
+                            <p>Lun - Vie: 9:00 - 18:00<br>Sáb: 9:00 - 13:00</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="nombre" name="nombre" placeholder="Nombre completo" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="tel" id="telefono" name="telefono" placeholder="Teléfono">
+                    </div>
+                    
+                    <div class="form-group">
+                        <select id="servicio" name="servicio" required>
+                            <option value="">Seleccione un servicio</option>
+                            <option value="civil">Derecho Civil</option>
+                            <option value="penal">Derecho Penal</option>
+                            <option value="laboral">Derecho Laboral</option>
+                            <option value="corporativo">Derecho Corporativo</option>
+                            <option value="inmobiliario">Derecho Inmobiliario</option>
+                            <option value="tributario">Derecho Tributario</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <textarea id="mensaje" name="mensaje" placeholder="Describa su consulta" rows="5" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">Enviar Consulta</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-brand">
+                        <i class="fas fa-balance-scale"></i>
+                        <span>Estudio Jurídico</span>
+                    </div>
+                    <p>Defendiendo sus derechos con excelencia y compromiso profesional desde hace más de 20 años.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Servicios</h4>
+                    <ul>
+                        <li><a href="#servicios">Derecho Civil</a></li>
+                        <li><a href="#servicios">Derecho Penal</a></li>
+                        <li><a href="#servicios">Derecho Laboral</a></li>
+                        <li><a href="#servicios">Derecho Corporativo</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> +54 11 4567-8900</li>
+                        <li><i class="fas fa-envelope"></i> info@estudiojuridico.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Av. Libertador 1234</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Síguenos</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Estudio Jurídico Profesional. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Chatbot -->
+    <div class="chatbot-container" id="chatbot">
+        <div class="chatbot-header">
+            <h4>Asistente Legal</h4>
+            <button class="chatbot-close" id="chatbotClose">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="chatbot-messages" id="chatbotMessages">
+            <div class="bot-message">
+                <p>¡Hola! Soy su asistente legal virtual. ¿En qué puedo ayudarle hoy?</p>
+            </div>
+        </div>
+        <div class="chatbot-input">
+            <input type="text" id="chatbotInput" placeholder="Escriba su consulta...">
+            <button id="chatbotSend">
+                <i class="fas fa-paper-plane"></i>
+            </button>
+        </div>
+    </div>
+
+    <button class="chatbot-toggle" id="chatbotToggle">
+        <i class="fas fa-comments"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="src/js/main.js"></script>
+    <script src="src/js/components/navigation.js"></script>
+    <script src="src/js/components/contact-form.js"></script>
+    <script src="src/js/components/chatbot.js"></script>
+</body>
+</html>
