@@ -830,6 +830,21 @@ section {
     }
 }
 
+/* Force Carousel Styles on Mobile */
+@media (max-width: 768px) {
+    .hero-image-carousel {
+        height: 200px !important;
+        margin-bottom: var(--spacing-xl) !important;
+    }
+
+    .carousel-item img {
+        height: 100% !important;
+        width: 100% !important;
+        object-fit: contain !important;
+        object-position: center !important;
+    }
+}
+
 /* Dropdown Menu Styles */
 .dropdown {
     position: relative;
