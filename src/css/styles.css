@@ -720,6 +720,19 @@ section {
   color: rgba(255, 255, 255, 0.7);
 }
 
+/* Animation Classes */
+.fade-in-section {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in-section.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .nav-menu {
