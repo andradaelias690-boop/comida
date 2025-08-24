@@ -78,6 +78,55 @@ class ContactForm {
       }
     })
 
+    // Additional custom validations
+    let firstInvalidField = null
+
+    // Validate Name
+    const name = document.getElementById('name');
+    if (name && name.value.trim() === '') {
+        isValid = false;
+        this.showError(name, 'Por favor, ingrese su nombre.');
+        if (!firstInvalidField) firstInvalidField = name;
+    }
+
+    // Validate Email
+    const email = document.getElementById('email');
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (email && !emailPattern.test(email.value)) {
+        isValid = false;
+        this.showError(email, 'Por favor, ingrese un correo electrónico válido.');
+        if (!firstInvalidField) firstInvalidField = email;
+    }
+
+    // Validate Phone
+    const phone = document.getElementById('phone');
+    const phonePattern = /^\d{9,15}$/;
+    if (phone && phone.value.trim() !== '' && !phonePattern.test(phone.value.trim())) {
+        isValid = false;
+        this.showError(phone, 'Por favor, ingrese un número de teléfono válido (solo números, entre 9 y 15 dígitos).');
+        if (!firstInvalidField) firstInvalidField = phone;
+    }
+
+    // Validate Service
+    const service = document.getElementById('service');
+    if (service && service.value === '') {
+        isValid = false;
+        this.showError(service, 'Por favor, seleccione un servicio.');
+        if (!firstInvalidField) firstInvalidField = service;
+    }
+
+    // Validate Message
+    const message = document.getElementById('message');
+    if (message && message.value.trim().length < 10) {
+        isValid = false;
+        this.showError(message, 'El mensaje debe tener al menos 10 caracteres.');
+        if (!firstInvalidField) firstInvalidField = message;
+    }
+
+    if (firstInvalidField) {
+      firstInvalidField.focus();
+    }
+
     return isValid
   }
 
@@ -124,6 +173,17 @@ class ContactForm {
       this.submitButton.disabled = false
       this.submitButton.textContent = this.originalButtonText
     }
+  }
+
+  showError(inputElement, message) {
+    inputElement.classList.add('invalid');
+    const error = document.createElement('div');
+    error.className = 'error-message';
+    error.style.color = 'var(--danger-color)';
+    error.style.fontSize = '0.8rem';
+    error.style.marginTop = '4px';
+    error.textContent = message;
+    inputElement.parentNode.insertBefore(error, inputElement.nextSibling);
   }
 }
 
