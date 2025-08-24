@@ -867,3 +867,14 @@ section {
 .dropdown-column a:hover {
     color: var(--secondary-color);
 }
+
+/* Dropdown Menu Simple Styles */
+.dropdown-content-simple {
+    min-width: 250px; /* Ancho ajustado para menús más simples */
+    flex-direction: column;
+    padding: var(--spacing-md);
+}
+
+.dropdown-content-simple a {
+    padding: var(--spacing-sm) var(--spacing-md);
+}
