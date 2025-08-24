@@ -602,6 +602,13 @@ section {
   margin-bottom: var(--spacing-xs);
 }
 
+.contact-map {
+    margin-top: var(--spacing-xl);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+}
+
 /* Contact Form */
 .contact-form {
   background-color: var(--white);
